@@ -1,3 +1,9 @@
+def remote = [:]
+remote.name = 'test'
+remote.host = '192.168.1.110'
+remote.port = 22
+remote.allowAnyHosts = true
+
 pipeline {
   stages{
     stage('Git Clone') {
